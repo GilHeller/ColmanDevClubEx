@@ -1,0 +1,8 @@
+.home_page {
+    display: flex;
+    margin: 1rem;
+}
+
+.home-page > input {
+    margin: 0 1rem;
+}

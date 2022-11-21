@@ -1,0 +1,12 @@
+.book-container > button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.book-container {
+    width: 55%;
+}
+
+.book-details-container{
+    width: 60%
+}
