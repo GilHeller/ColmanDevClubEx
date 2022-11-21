@@ -11,15 +11,15 @@ const BooksList = (props) => {
   } 
   
   const getBooks = () => {
-    const url = "https://www.googleapis.com/books/v1/volumes?q=a";
-    fetch(`${url}?q=${search}`, {method: "GET"})
+    const url = "https://www.googleapis.com/books/v1/volumes";
+    fetch(`${url}?q=${search || "harry poter"}`, {method: "GET"})
     .then(res => res?.json())
     .then(data => setBooks(data?.items));
   }
 
   useEffect(() => {
     getBooks()
-  })
+  }, [])
 
   return (
     <div className="booklist-page">
